@@ -37,7 +37,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0f31df35880686b3f
-      KeyName: jeffgeerling_aws
+      KeyName: sektasoldier1
       InstanceType: c5.2xlarge
       SecurityGroupIds:
         - Ref: SecurityGroup
@@ -62,7 +62,7 @@ Resources:
       SecurityGroups:
         - Ref: SecurityGroup
       InstanceType: c5.large
-      KeyName: jeffgeerling_aws
+      KeyName: sektasoldier1
       BlockDeviceMappings:
         - DeviceName: "/dev/sdk"
           Ebs:
@@ -80,8 +80,8 @@ Resources:
       LaunchConfigurationName:
         Ref: LaunchConfiguration
       MinSize: '1'
-      DesiredCapacity: '100'
-      MaxSize: '150'
+      DesiredCapacity: '5'
+      MaxSize: '5'
       Tags:
         - Key: Name
           PropagateAtLaunch: true

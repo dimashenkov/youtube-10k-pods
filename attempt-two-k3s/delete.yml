@@ -4,7 +4,7 @@
 
   vars:
     aws_region: us-east-1
-    aws_profile: jeffgeerling
+    aws_profile: default
 
   tasks:
     - name: Delete CloudFormation stacks.
